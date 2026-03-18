@@ -18,5 +18,26 @@ A Python tool to extract the structured scope of a HackerOne bug bounty program.
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/hackerone-scope-extractor.git
-cd hackerone-scope-extractor
+git clone https://github.com/0xshii/scope.git
+cd scope
+```
+
+2. Install dependencies:
+```bash
+pip install requests 
+```
+
+## Usage
+
+```bash
+python scope_pr.py [program_handle]
+```
+Example:
+```bash
+python scope_pr.py tiktok
+```
+- Save output to a file
+
+```bash
+python scope_pr.py [program_handle] -o output.txt
+```
